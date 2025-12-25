@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dentist in Alexandria</title>
+  <meta name="description" content="Professional dental clinic in Alexandria, VA — general, cosmetic, and emergency dental care.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dentist in Alexandria" />
+  <meta property="og:description" content="Trusted dental services with modern technology and compassionate care." />
+  <meta property="og:image" content="https://placehold.co/1200x630/00c8b0/ffffff?text=Dentist+in+Alexandria" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Dentist in Alexandria",
+    "image": "https://placehold.co/400x400/00a896/ffffff?text=Logo",
+    "url": "https://dentist-alexandria-demo.repl.co",
+    "telephone": "+17035551234",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Braddock Place",
+      "addressLocality": "Alexandria",
+      "addressRegion": "VA",
+      "postalCode": "22314",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    "sameAs": ["https://facebook.com/dentistalexandria", "https://instagram.com/dentistalexandria"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #00a896;
+      --light: #f8f9fa;
+      --dark: #333;
+      --gray: #666;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: #fff;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    nav a {
+      margin-left: 1.2rem;
+      text-decoration: none;
+      color: var(--gray);
+      font-weight: 500;
+    }
+    .contact-info {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://placehold.co/1920x1080/e0f7f7/00a896?text=Modern+Dental+Clinic') center/cover no-repeat;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 3.2rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    .hero-desc {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin-bottom: 2.5rem;
+    }
+    .feedback-buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+      width: 100%;
+      max-width: 900px;
+    }
+    .btn {
+      padding: 12px 16px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #008a78;
+    }
+    section {
+      padding: 4rem 5%;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-size: 2.2rem;
+      color: var(--primary);
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: var(--light);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .map {
+      width: 100%;
+      height: 400px;
+      background: #eee;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gray);
+      margin: 2rem 0;
+    }
+    form {
+      display: grid;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    input, textarea, select {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    footer {
+      background: var(--light);
+      padding: 2.5rem 5%;
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--gray);
+    }
+    .socials {
+      margin: 1rem 0;
+    }
+    .socials a {
+      display: inline-block;
+      margin: 0 8px;
+      font-weight: bold;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.2rem; }
+      .hero-desc { font-size: 1rem; }
+      .feedback-buttons { grid-template-columns: repeat(2, 1fr); }
+      nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header role="banner">
+    <div class="logo" aria-label="Dentist in Alexandria — home">Dentist in Alexandria</div>
+    <nav role="navigation">
+      <a href="#welcome">Welcome</a>
+      <a href="#services">Services</a>
+      <a href="#team">Team</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="contact-info">
+      <span>📞 +1 (703) 555-1234</span>
+      <button class="btn" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Book Now</button>
+    </div>
+  </header>
+
+  <div class="hero" role="region" aria-label="Main banner">
+    <h1>Dentist in Alexandria</h1>
+    <p class="hero-desc">Compassionate, modern dental care for your whole family — from cleanings to implants and emergencies.</p>
+    <div class="feedback-buttons" role="group" aria-label="Quick contact options">
+      <button class="btn" onclick="alert('Booking system would open here')">📅 Book Online</button>
+      <a href="tel:+17035551234" class="btn">📞 Call Now</a>
+      <a href="https://wa.me/17035551234" class="btn">💬 WhatsApp</a>
+      <button class="btn" onclick="document.getElementById('callback-form').style.display='block'">📲 Callback</button>
+      <button class="btn" onclick="alert('Emergency instructions would appear')">🚑 Emergency</button>
+      <button class="btn">🌐 EN / RU</button>
+    </div>
+  </div>
+
+  <section id="welcome">
+    <h2 class="section-title">Welcome</h2>
+    <div class="card">
+      <p>Serving the Alexandria community since 2005 with state-of-the-art technology, pain-free procedures, and a team that treats you like family.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="cards">
+      <div class="card"><h3>General Dentistry</h3><p>Cleanings, fillings, exams</p></div>
+      <div class="card"><h3>Cosmetic Dentistry</h3><p>Whitening, veneers, bonding</p></div>
+      <div class="card"><h3>Dental Implants</h3><p>Permanent tooth replacement</p></div>
+      <div class="card"><h3>Pediatric Care</h3><p>Gentle treatment for kids</p></div>
+    </div>
+  </section>
+
+  <section id="team">
+    <h2 class="section-title">Our Team</h2>
+    <div class="cards">
+      <div class="card"><h3>Dr. Anna Miller</h3><p>Cosmetic Dentistry Specialist</p></div>
+      <div class="card"><h3>Dr. James Lee</h3><p>Implantology & Surgery</p></div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2 class="section-title">Patient Reviews</h2>
+    <div class="card">
+      <p>⭐⭐⭐⭐⭐ “The most painless dental visit I’ve ever had! Highly recommend.” – Sarah T.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required aria-label="Your full name">
+      <input type="tel" placeholder="Phone Number" required aria-label="Phone number">
+      <select aria-label="Service interested in">
+        <option value="">Select a service</option>
+        <option>General Checkup</option>
+        <option>Teeth Whitening</option>
+        <option>Dental Implant</option>
+        <option>Emergency Visit</option>
+      </select>
+      <textarea placeholder="Your Message" rows="4" aria-label="Your message"></textarea>
+      <button type="submit" class="btn">Send Request</button>
+    </form>
+    <div class="map" role="region" aria-label="Clinic location on Google Maps">
+      [Google Map would be embedded here — e.g., via iframe]
+    </div>
+    <p style="text-align:center; margin-top:1rem;">
+      📍 123 Braddock Place, Alexandria, VA 22314<br>
+      📞 +1 (703) 555-1234
+    </p>
+  </section>
+
+  <footer role="contentinfo">
+    <p>📍 123 Braddock Place, Alexandria, VA 22314</p>
+    <p>📞 +1 (703) 555-1234</p>
+    <div class="socials">
+      <a href="#" aria-label="Facebook">[FB]</a>
+      <a href="#" aria-label="Instagram">[IG]</a>
+      <a href="#" aria-label="YouTube">[YT]</a>
+    </div>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Sitemap</a></p>
+    <p>© 2025 Dentist in Alexandria. All rights reserved.</p>
+  </footer>
+
+</body>
+                               </html>
